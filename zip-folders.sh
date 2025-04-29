@@ -10,5 +10,5 @@ for subdir in */; do
   dirname=$(basename "$subdir")
 
   # Zip the subdirectory into a unique .zip file
-  zip -0 -r -m -T "$ZIPS_FOLDER/$dirname.zip" "$subdir"
+  zip -0 -r -T "$ZIPS_FOLDER/$dirname.zip" "$subdir"
 done
